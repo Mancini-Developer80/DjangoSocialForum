@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head_title %} {{block.super}} | Logout {% endblock head_title %}
+
+{% block content %}
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-6 text-center">
+            <p class="display-5 my-3">Logout avvenuto con successo!</p>
+            <a href="{% url 'login' %}" class="btn btn-info text-white my-3">Effettua di nuovo il Login</a>
+        </div>
+    </div>
+
+
+
+{% endblock content %}
